@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <button
+      class="open-button"
+      onclick="toggleModal()"
+    >
+      Open Modal
+    </button>
+
+    <div
+      class="modal-container"
+      id="modalContainer"
+    >
+      <div class="modal">
+        <h2>Modal Title</h2>
+        <p>This is a modal window with a transparent background.</p>
+        <button onclick="toggleModal()">Close</button>
+      </div>
+    </div>
+    <!-- davaleba 2 -->
+    <div style="text-align: center; margin-top: 50px">
+      <input
+        id="colorInput"
+        type="text"
+        placeholder="Enter a color (e.g., red)"
+      />
+      <button id="changeColorButton">Change Background</button>
+    </div>
+
+    <!-- davaleba 3 -->
+    <div style="text-align: center; margin-top: 50px">
+      <input
+        id="numberInput"
+        type="text"
+        placeholder="Enter numbers separated by ':'"
+      />
+      <button id="calculateAverage">Average</button>
+      <p id="result"></p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
